@@ -1,2 +1,1 @@
-def filter (entry, pattern): pass
-fix: #guard against empty input
+def parse(file, encoding="utf-8"): pass

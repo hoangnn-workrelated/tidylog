@@ -1,0 +1,14 @@
+Q7: Lightweight Tag vs Annotated Tag
+
+LIGHTWEIGHT TAG:
+- Just a pointer to a specific commit (like a branch that doesn't move)
+- No metadata stored (no author, date, message)
+- Created with: git tag <tagname>
+- Use for: temporary tags, local-only markers, personal references
+
+ANNOTATED TAG:
+- Stored as a full Git object with metadata
+- Includes: tagger name, email, date, tag message
+- Can be GPG signed for verification
+- Created with: git tag -a <tagname> -m "message"
+- Use for: public releases, official versions, permanent references

@@ -1,0 +1,17 @@
+/*
+Q4: git reset modes
+
+--soft: Moves HEAD back, keeps changes STAGED
+--mixed (default): Moves HEAD back, keeps changes UNSTAGED
+--hard: Moves HEAD back, DISCARDS all changes
+
+Use --soft to recommit with different message
+Use --mixed to rework changes before staging
+Use --hard with CAUTION - loses work
+*/
+/*
+Q5: git reflog shows HEAD movement history
+- Shows all commits (even 'lost' ones)
+- Includes: commits, resets, reverts, checkouts
+- Useful for recovering from reset --hard mistakes
+*/

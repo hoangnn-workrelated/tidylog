@@ -1,0 +1,20 @@
+/*
+Q5: What is git reflog and what does it show?
+
+git reflog (reference log) shows the history of where HEAD has pointed.
+
+What it shows:
+- Every time HEAD moves (commits, checkouts, resets, reverts, merges)
+- Commit hashes (even for commits no longer in git log)
+- Action types: commit, reset, checkout, merge, revert, amend
+- Relative positions: HEAD@{0} = most recent, HEAD@{1} = previous, etc.
+
+From my reflog example:
+- HEAD@{0}: commit - Revert 'temp: debug print'
+- HEAD@{2}: reset - moving to HEAD~1 (soft reset)
+- HEAD@{4}: commit - temp: debug print
+- HEAD@{6}: commit (merge) - merge conflict resolution
+- HEAD@{31}: commit - feat: add validate function stub
+- HEAD@{45}: commit (amend) - amended initial commit
+
+*/

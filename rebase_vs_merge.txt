@@ -1,0 +1,15 @@
+Q7: Difference between Rebase and Merge
+
+REBASE:
+- Rewrites commit history to make it linear
+- Moves feature branch commits onto tip of main
+- Changes commit SHAs (rewrites history)
+- Cleaner, easier to follow history
+- Use for: cleaning up local branches before PR
+
+MERGE:
+- Preserves complete history and branch structure
+- Creates a merge commit that combines branches
+- No commit SHAs are changed
+- Shows exactly when branches diverged and merged
+- Use for: integrating finished features into main

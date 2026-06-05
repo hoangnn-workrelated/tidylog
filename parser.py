@@ -1,1 +1,1 @@
-def parse(file, encoding="utf-8", log=False): pass
+def parse(file, encoding="utf-8", log=False, strict=True): pass
